@@ -18,7 +18,7 @@ from setuptools import setup
 from distutils.cmd import Command
 from distutils.command.install_lib import install_lib as old_install_lib
 
-VERSION = '1.0.35'
+VERSION = '2'
 
 # Change the current dir to where the setup.py is in case we're not there.
 path = os.path.split(sys.argv[0])[0]
@@ -126,7 +126,7 @@ class build_doc(Command):
             z.close()
 
         except ImportError:
-            print >>sys.stderr, 'epydoc not installed, skipping build_doc.'
+            print('epydoc not installed, skipping build_doc.', file = sys.stderr)
 
 
 commands = {'build_doc': build_doc,
