@@ -23,10 +23,10 @@ import threading
 import time
 import logging
 
-from Skype4Py.api import Command, SkypeAPIBase, \
+from Skype4Py3.api import Command, SkypeAPIBase, \
                          timeout2float, finalize_opts
-from Skype4Py.errors import SkypeAPIError
-from Skype4Py.enums import *
+from Skype4Py3.errors import SkypeAPIError
+from Skype4Py3.enums import *
 
 
 __all__ = ['SkypeAPI']

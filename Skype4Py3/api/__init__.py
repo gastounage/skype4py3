@@ -21,9 +21,9 @@ import sys
 import threading
 import logging
 
-from Skype4Py.utils import *
-from Skype4Py.enums import apiAttachUnknown
-from Skype4Py.errors import SkypeAPIError
+from Skype4Py3.utils import *
+from Skype4Py3.enums import apiAttachUnknown
+from Skype4Py3.errors import SkypeAPIError
 
 
 __all__ = ['Command', 'SkypeAPINotifier', 'SkypeAPI']

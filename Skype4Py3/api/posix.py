@@ -23,7 +23,7 @@ The options include:
 __docformat__ = 'restructuredtext en'
 
 
-from Skype4Py.errors import SkypeAPIError
+from Skype4Py3.errors import SkypeAPIError
 
 
 __all__ = ['SkypeAPI']
