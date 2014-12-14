@@ -126,13 +126,13 @@ class build_doc(Command):
             z.close()
 
         except ImportError:
-            print('epydoc not installed, skipping build_doc.', file = sys.stderr)
+            sys.stderr.write("epydoc not installed, skipping build_doc.")
 
 
 commands = {'build_doc': build_doc,
             'install_lib': install_lib}
 
-desc = open("README.rst").read() + "\n" + open("CHANGES.rst").read()
+desc = "A cross-platform way of interacting with Skype through Python. Open 'README.rst' for more details."
 
 # start the distutils setup
 setup(name='Skype4Py',
